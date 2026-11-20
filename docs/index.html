@@ -25,13 +25,13 @@ b,strong{font-weight:650}
 
 /* ---------- HERO ---------- */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
-.hero-top{max-width:980px;margin:0 auto;padding:12vh 16px 0;width:100%}
+.hero-top{max-width:980px;margin:0 auto;padding:12vh 16px 32px;width:100%}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--jp)}
 .hero h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(40px,8vw,96px);line-height:.98;letter-spacing:-.03em;margin:14px 0 22px}
 .hero h1 em{font-style:normal;color:var(--bus)}
 .hero p.dek{font-size:clamp(17px,2.2vw,21px);color:var(--text-2);max-width:640px;margin:0}
 .byline{margin-top:22px;font-size:13px;color:var(--muted)}
-.scene{position:relative;height:clamp(170px,26vh,240px)}
+.scene{position:relative;height:clamp(200px,28vh,260px)}
 .scene svg.road{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%}
 .lane-dash{stroke:var(--lane);stroke-width:4;stroke-dasharray:38 30;animation:drive 1.1s linear infinite}
 @keyframes drive{to{stroke-dashoffset:-68}}
@@ -39,7 +39,7 @@ b,strong{font-weight:650}
 .hero-bus .bob{animation:bob .45s ease-in-out infinite alternate}
 @keyframes arrive{from{transform:translateX(-110%)}to{transform:translateX(var(--stop,18vw))}}
 @keyframes bob{to{transform:translateY(-2px)}}
-.busstop{position:absolute;bottom:clamp(92px,13vh,120px);right:clamp(24px,12vw,180px);width:54px}
+.busstop{position:absolute;bottom:58%;right:clamp(24px,12vw,180px);width:40px}
 .cue{position:absolute;left:50%;transform:translateX(-50%);bottom:10px;font-size:12px;color:var(--lane);letter-spacing:.1em;text-transform:uppercase;font-weight:600;z-index:2;opacity:.85}
 @media (prefers-reduced-motion: reduce){.lane-dash,.hero-bus,.hero-bus .bob{animation:none}.hero-bus{transform:translateX(var(--stop,18vw))}}
 
